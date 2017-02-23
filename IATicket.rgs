@@ -1,0 +1,21 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'IATicket'
+		'IATicket.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+	
+	NoRemove 'Component Categories'
+	{
+		{7DD95801-9882-11CF-9FA9-00AA006C42C4}
+		{
+			val 409 = s 'Controls that are safely scriptable'
+			val 800 = s 'Safe for scripting'
+		}
+	}
+}
+
